@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PDF File Icon</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet"> <style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: #55b6fa;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		.container{
+			width: 1600px;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			flex-wrap: wrap;
+			margin: auto;
+		}
+		.icon{
+			width: 320px;
+			height: 400px;
+			background: #fff;
+			border-radius: 20px;
+			position: relative;
+			margin: 50px;
+		}
+		.corner{
+			width: 80px;
+			height: 80px;
+			background: #e0e0e0;
+			border-bottom-left-radius: 20px;
+			border-top-right-radius: 20px;
+			position: absolute;
+			right: 0;
+		}
+		.corner:before{
+			content: '';
+			width: 60px;
+			height: 120px;
+			border-radius: 0 60px 60px 0;
+			background: #55b6fa;
+			position: absolute;
+			transform-origin: top left;
+			transform: rotate(-45deg);
+		}
+		.label{
+			width: 230px;
+			height: 100px;
+			position: absolute;
+			top: 50px;
+			left: -30px;
+			text-align: center;
+			font-size: 70px;
+			font-weight: 500;
+			line-height: 95px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.label:before{
+			content: '';
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			transform-origin: top left;
+			transform: rotate(-48deg);
+			position: absolute;
+			left: 0;
+			bottom: -40px;
+			z-index: -1;
+		}
+		.label:after{
+			content: '';
+			width: 30px;
+			height: 30px;
+			background: #fff;
+			position: absolute;
+			left: 30px;
+			bottom: -30px;
+		}
+		.pdf .label{background: #ff4c3e;}
+		.pdf .label:before{background: #c92c24;}
+
+		.html .label{background: #f06529;}
+		.html .label:before{background: #e34c26;}
+
+		.css .label{background: #009ae4;}
+		.css .label:before{background: #007db7;}
+
+		.js .label{background: #fdc93d;}
+		.js .label:before{background: #db9c28;}
+
+		.csv .label{background: #40a468;}
+		.csv .label:before{background: #267a48;}
+
+		.zip .label{background: #48576b;}
+		.zip .label:before{background: #3f455a;}
+
+		.line{
+			width: 200px;
+			height: 15px;
+			background: #dbdbdb;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.line1{top: 200px;}
+		.line2{top: 240px;}
+		.line3{top: 280px;}
+		.line4{top: 320px;}
+		line
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="icon html">
+			<div class="corner"></div>
+			<div class="label">html</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+		<div class="icon css">
+			<div class="corner"></div>
+			<div class="label">css</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+		<div class="icon js">
+			<div class="corner"></div>
+			<div class="label">js</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+		<div class="icon pdf">
+			<div class="corner"></div>
+			<div class="label">pdf</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+		<div class="icon csv">
+			<div class="corner"></div>
+			<div class="label">csv</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+		<div class="icon zip">
+			<div class="corner"></div>
+			<div class="label">zip</div>
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+			<div class="line line4"></div>
+		</div>
+	</div>
+</body>
+</html>
